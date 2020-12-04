@@ -26,8 +26,6 @@ include 'bitcoinData.php';
             <div class="form-group">
                 <label for="">Huidige Bitcoin Prijs</label>
                 <span>&euro; </span><input type="text" name="bitcoin_current_price" value="<?php echo getBitcoinPrice() ?>" class="form-control">
-                <label for="">je gekochte bitcoins</label>
-                <?php calculateBitcoinAmount(); ?>
                 <small id="text" class="form-text text-muted">Laatste update: <?php echo getTime() ?> </small>
             </div>
             <a href="?euro=100" class="btn btn-info p-3 m-1">&euro;100</a>
